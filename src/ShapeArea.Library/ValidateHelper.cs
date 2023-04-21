@@ -20,11 +20,11 @@ public class ValidateHelper
     //public static T EnsureNotInfinityValue<T>(T value) where T : INumber<T> =>
     //    T.IsInfinity(value) ? throw new OverflowException() : value;
 
-    /// <exception cref="ArgumentException"></exception>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     public static double EnsureNotNegativeValue(double value, string? paramName = null)
     {
         return double.IsNegative(value)
-            ? throw new ArgumentException("Argument cannot be negative.", paramName)
+            ? throw new ArgumentOutOfRangeException("Argument cannot be negative.", paramName) // 
             : value;
     }
 
