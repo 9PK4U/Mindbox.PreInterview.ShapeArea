@@ -18,6 +18,7 @@ public class ShapeTests
         circle3.Area.Should().Be(Math.PI);
     }
 
+
     [Test]
     public void ShouldReturnCorrectTriangleArea()
     {
@@ -29,6 +30,17 @@ public class ShapeTests
         triangle.Area.Should().Be(0.4330127018922193);
         triangle2.Area.Should().Be(51.521233486786784);
         triangle3.Area.Should().Be(347.6907384443861);
+    }
+
+    [Test]
+    public void ShouldReturnCorrectTriangleIsRight()
+    {
+        var triangle = new Triangle(1, 1, 1);
+        var triangle2 = new Triangle(3.5, 2.1, 2.8);
+
+
+        triangle.IsRight.Should().Be(false);
+        triangle2.IsRight.Should().Be(true);
     }
 
     [Test]
