@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShapeArea.Library\ShapeArea.Library.csproj" />
+    <ProjectReference Include="..\..\src\ShapeArea.Library\ShapeArea.Library.csproj" />
   </ItemGroup>
 
 </Project>
