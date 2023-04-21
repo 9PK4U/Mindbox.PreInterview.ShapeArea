@@ -1,0 +1,4 @@
+SELECT p.Name, c.Name
+FROM Products P
+LEFT JOIN ProductsCategories PC ON p.Id = pc.ProductId
+LEFT JOIN Categories C ON PC.CategoryId = C.Id;
